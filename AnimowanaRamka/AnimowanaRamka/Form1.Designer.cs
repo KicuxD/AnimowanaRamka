@@ -28,24 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.buttonShape1 = new AnimowanaRamka.ButtonShape();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Roboto", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(172, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 99);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Przycisk";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -85,17 +73,29 @@
             this.comboBox2.Size = new System.Drawing.Size(93, 23);
             this.comboBox2.TabIndex = 2;
             // 
+            // buttonShape1
+            // 
+            this.buttonShape1.BackColor = System.Drawing.Color.White;
+            this.buttonShape1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.buttonShape1.Location = new System.Drawing.Point(154, 61);
+            this.buttonShape1.Name = "buttonShape1";
+            this.buttonShape1.Size = new System.Drawing.Size(269, 78);
+            this.buttonShape1.TabIndex = 3;
+            this.buttonShape1.Text = "Tekst";
+            this.buttonShape1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(568, 450);
+            this.Controls.Add(this.buttonShape1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -104,12 +104,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private ButtonShape buttonShape1;
     }
 }
 

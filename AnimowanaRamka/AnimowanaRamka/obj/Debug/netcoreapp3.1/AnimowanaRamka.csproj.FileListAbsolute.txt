@@ -4,7 +4,6 @@ C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.runtimeconfig.dev.json
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.dll
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.pdb
-C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csprojAssemblyReference.cache
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.Form1.resources
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csproj.GenerateResource.cache
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.AssemblyInfoInputs.cache
