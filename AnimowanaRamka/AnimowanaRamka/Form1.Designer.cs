@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.buttonShape1 = new AnimowanaRamka.ButtonShape();
+            this.btnMain = new AnimowanaRamka.ButtonShape();
             this.SuspendLayout();
             // 
             // label1
@@ -59,10 +59,16 @@
             // 
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Rectangle",
+            "Elipsa",
+            "Koło",
+            "Kwadrat"});
             this.comboBox1.Location = new System.Drawing.Point(172, 195);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(93, 23);
             this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -73,16 +79,17 @@
             this.comboBox2.Size = new System.Drawing.Size(93, 23);
             this.comboBox2.TabIndex = 2;
             // 
-            // buttonShape1
+            // btnMain
             // 
-            this.buttonShape1.BackColor = System.Drawing.Color.White;
-            this.buttonShape1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.buttonShape1.Location = new System.Drawing.Point(154, 61);
-            this.buttonShape1.Name = "buttonShape1";
-            this.buttonShape1.Size = new System.Drawing.Size(269, 78);
-            this.buttonShape1.TabIndex = 3;
-            this.buttonShape1.Text = "Tekst";
-            this.buttonShape1.UseVisualStyleBackColor = false;
+            this.btnMain.BackColor = System.Drawing.Color.White;
+            this.btnMain.BtnShape = null;
+            this.btnMain.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.btnMain.Location = new System.Drawing.Point(154, 61);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(269, 78);
+            this.btnMain.TabIndex = 3;
+            this.btnMain.Text = "Tekst";
+            this.btnMain.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -90,7 +97,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(568, 450);
-            this.Controls.Add(this.buttonShape1);
+            this.Controls.Add(this.btnMain);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -108,7 +115,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private ButtonShape buttonShape1;
+        private ButtonShape btnMain;
     }
 }
 

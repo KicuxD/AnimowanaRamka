@@ -10,26 +10,26 @@ namespace AnimowanaRamka
     public class ButtonShape: Button
     {
 
-        private String btnShape;
+        private string btnShape = "rectangle";
+
+        public string BtnShape
+        {
+            get { return btnShape; }
+            set { btnShape = value; }
+        }
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
             GraphicsPath grPath = new GraphicsPath();
 
-            switch(btnShape)
+            if (btnShape == "rectangle")
             {
-                case "ellipse":
-
-                    break;
-                case "rectangle":
-                    Rectangle pathRect = new Rectangle(20, 20, 100, 200);
-                    grPath.AddRectangle(pathRect);
-                    this.Region = new System.Drawing.Region(grPath);
-                    break;
-                default:
-                    grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
-                    this.Region = new System.Drawing.Region(grPath);
-                    break;
+                Rectangle pathRect = new Rectangle(20, 20, 100, 300);
+                grPath.AddRectangle(pathRect);
+                this.Region = new System.Drawing.Region(grPath);
+            } else if (btnShape == "elipsa") {
+                grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
+                this.Region = new System.Drawing.Region(grPath);
             }
 
             base.OnPaint(e);

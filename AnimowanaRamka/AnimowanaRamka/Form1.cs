@@ -15,7 +15,22 @@ namespace AnimowanaRamka
         public Form1()
         {
             InitializeComponent();
+            Console.WriteLine("Hejka naklejka");
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = comboBox1.SelectedItem.ToString();
+            Console.WriteLine(selectedItem);
+            Console.WriteLine("Hejka naklejka");
+
+            switch (selectedItem)
+            {
+                case "rectangle":
+                    btnMain.BtnShape = "rectangle";
+                    btnMain.Refresh();
+                    break;
+            }
+        }
     }
 }
