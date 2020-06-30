@@ -28,83 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboColor = new System.Windows.Forms.ComboBox();
             this.btnMain = new AnimowanaRamka.ButtonShape();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(172, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "KSZTAŁT";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(347, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "KOLOR";
             // 
             // comboBox1
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Rectangle",
-            "Elipsa",
-            "Koło",
-            "Kwadrat"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 195);
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3")});
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(93, 23);
-            this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // comboColor
             // 
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(305, 195);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(93, 23);
-            this.comboBox2.TabIndex = 2;
+            resources.ApplyResources(this.comboColor, "comboColor");
+            this.comboColor.FormattingEnabled = true;
+            this.comboColor.Items.AddRange(new object[] {
+            resources.GetString("comboColor.Items"),
+            resources.GetString("comboColor.Items1"),
+            resources.GetString("comboColor.Items2"),
+            resources.GetString("comboColor.Items3"),
+            resources.GetString("comboColor.Items4"),
+            resources.GetString("comboColor.Items5")});
+            this.comboColor.Name = "comboColor";
+            this.comboColor.SelectedIndexChanged += new System.EventHandler(this.comboColor_SelectedIndexChanged);
             // 
             // btnMain
             // 
             this.btnMain.BackColor = System.Drawing.Color.White;
+            this.btnMain.BtnColor = null;
             this.btnMain.BtnShape = null;
-            this.btnMain.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.btnMain.Location = new System.Drawing.Point(154, 61);
+            resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(269, 78);
-            this.btnMain.TabIndex = 3;
-            this.btnMain.Text = "Tekst";
             this.btnMain.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Name = "label3";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.ClientSize = new System.Drawing.Size(568, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMain);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboColor);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,8 +113,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboColor;
         private ButtonShape btnMain;
+        private System.Windows.Forms.Label label3;
     }
 }
 

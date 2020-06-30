@@ -21,16 +21,61 @@ namespace AnimowanaRamka
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedItem = comboBox1.SelectedItem.ToString();
-            Console.WriteLine(selectedItem);
-            Console.WriteLine("Hejka naklejka");
+
 
             switch (selectedItem)
             {
-                case "rectangle":
-                    btnMain.BtnShape = "rectangle";
-                    btnMain.Refresh();
+                case "Prostokąt":
+                    btnMain.BtnShape = "Rectangle";
+                    break;
+                case "Elipsa":
+                    btnMain.BtnShape = "Ellipsis";
+                    break;
+                case "Koło":
+                    btnMain.BtnShape = "Circle";
+                    break;
+                case "Kwadrat":
+                    btnMain.BtnShape = "Square";
                     break;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 0;
+            comboColor.SelectedIndex = 0;
+
+            btnMain.BackColor = Color.Red;
+            btnMain.FlatAppearance.BorderSize = 0;
+        }
+
+        private void comboColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedColor = comboColor.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Czarny":
+                    btnMain.BtnColor = "Black";
+                    break;
+                case "Czerwony":
+                    btnMain.BtnColor = "Red";
+                    break;
+                case "Biały":
+                    btnMain.BtnColor = "White";
+                    break;
+                case "Żółty":
+                    btnMain.BtnColor = "Yellow";
+                    break;
+                case "Zielony":
+                    btnMain.BtnColor = "Green";
+                    break;
+                case "Niebieski":
+                    btnMain.BtnColor = "Blue";
+                    break;
+            }
+
+        }
+
     }
 }
