@@ -7,10 +7,12 @@ using System.Windows.Forms;
 
 namespace AnimowanaRamka
 {
-    public class ButtonShape: Button
+    class ButtonShape: Button
     {
 
         private string btnShape, btnColor;
+        private SolidBrush borderBrush;
+        private Rectangle borderRectangle;
 
         public string BtnShape
         {
@@ -24,11 +26,16 @@ namespace AnimowanaRamka
             set { btnColor = value; }
         }
 
+        public override Cursor Cursor { get; set; } = Cursors.Hand;
+        public float BorderThickness { get; set; } = 5;
+
+        private StringFormat stringFormat = new StringFormat();
+
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
             GraphicsPath grPath = new GraphicsPath();
 
-            switch(btnShape)
+            switch (btnShape)
             {
                 case "Rectangle":
                     Rectangle pathRect = new Rectangle(0, 0, ClientSize.Width, ClientSize.Height);
@@ -44,7 +51,7 @@ namespace AnimowanaRamka
                     this.Region = new System.Drawing.Region(grPath);
                     break;
                 case "Square":
-                    Rectangle pathSquare = new Rectangle(ClientSize.Width/3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    Rectangle pathSquare = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     grPath.AddRectangle(pathSquare);
                     this.Region = new System.Drawing.Region(grPath);
                     break;
@@ -72,7 +79,39 @@ namespace AnimowanaRamka
                     break;
             }
 
+            borderBrush = new SolidBrush(ColorTranslator.FromHtml("#ff0000"));
+
+
+            this.Paint += ButtonShape_Paint;
+
+
             base.OnPaint(e);
         }
+
+        private void ButtonShape_Paint(object sender, PaintEventArgs e)
+        {
+            GraphicsPath grBorder = new GraphicsPath();
+
+            switch (btnShape)
+            {
+                case "Rectangle":
+                    borderRectangle = new Rectangle(0, 0, Width, Height);
+                    e.Graphics.DrawRectangle(new Pen(borderBrush, BorderThickness), borderRectangle);
+                    break;
+                case "Ellipsis":
+                    borderRectangle = new Rectangle(0, 0, Width, Height);
+                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
+                    break;
+                case "Circle":
+                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    break;
+                case "Square":
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    e.Graphics.DrawRectangle(new Pen(borderBrush, BorderThickness), borderRectangle);
+                    break;
+            }
+        }
+
+
     }
 }

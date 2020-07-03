@@ -77,11 +77,10 @@
             // 
             // btnMain
             // 
-            this.btnMain.AutoEllipsis = true;
+            resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.BackColor = System.Drawing.Color.White;
             this.btnMain.BtnColor = null;
             this.btnMain.BtnShape = null;
-            resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.Name = "btnMain";
             this.btnMain.UseVisualStyleBackColor = false;
             // 

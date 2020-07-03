@@ -192,6 +192,9 @@
   <data name="&gt;&gt;comboColor.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="btnMain.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
   <data name="btnMain.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>

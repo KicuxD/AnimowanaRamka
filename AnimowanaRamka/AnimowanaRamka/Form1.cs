@@ -44,8 +44,6 @@ namespace AnimowanaRamka
             comboBox1.SelectedIndex = 0;
             comboColor.SelectedIndex = 0;
 
-            btnMain.FlatAppearance.BorderSize = 6;
-            btnMain.FlatAppearance.BorderColor = Color.Red;
         }
 
         private void comboColor_SelectedIndexChanged(object sender, EventArgs e)
