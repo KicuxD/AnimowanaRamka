@@ -140,6 +140,9 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboFont);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -148,9 +151,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.comboColor);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
