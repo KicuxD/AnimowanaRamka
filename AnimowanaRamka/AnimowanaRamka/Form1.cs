@@ -54,7 +54,7 @@ namespace AnimowanaRamka
             switch (selectedColor)
             {
                 case "Czarny":
-                    btnMain.BtnColor = "Black";
+                    btnMain.BtnColor = "Red";
                     break;
                 case "Czerwony":
                     btnMain.BtnColor = "Red";

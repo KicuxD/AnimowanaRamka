@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\mfano\\.nuget\\packages\\": {}
+    "C:\\Users\\kicus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfano\\Documents\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka.csproj",
+      "projectUniqueName": "C:\\Users\\kicus\\Source\\Repos\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka.csproj",
       "projectName": "AnimowanaRamka",
-      "projectPath": "C:\\Users\\mfano\\Documents\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka.csproj",
-      "packagesPath": "C:\\Users\\mfano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfano\\Documents\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\obj\\",
+      "projectPath": "C:\\Users\\kicus\\Source\\Repos\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka.csproj",
+      "packagesPath": "C:\\Users\\kicus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kicus\\Source\\Repos\\AnimowanaRamka\\AnimowanaRamka\\AnimowanaRamka\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mfano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kicus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400-preview-015151\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
