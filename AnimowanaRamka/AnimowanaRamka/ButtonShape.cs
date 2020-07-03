@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
@@ -7,7 +8,7 @@ namespace AnimowanaRamka
     class ButtonShape: Button
     {
 
-        private string btnShape, btnColor;
+        private string btnShape, btnColor, btnText, btnFont;
         private SolidBrush borderBrush;
         private Rectangle borderRectangle;
 
@@ -22,12 +23,25 @@ namespace AnimowanaRamka
             get { return btnColor; }
             set { btnColor = value; }
         }
+        public string BtnText
+        {
+            get { return btnText; }
+            set { btnText = value; }
+        }
 
-        public override Cursor Cursor { get; set; } = Cursors.Hand;
+        public string BtnFont
+        {
+            get { return btnFont; }
+            set { btnFont = value; }
+        }
+
         public float BorderThickness { get; set; } = 5;
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
+
+            this.Text = BtnText;
+
             GraphicsPath grPath = new GraphicsPath();
 
             switch (btnShape)
@@ -74,6 +88,8 @@ namespace AnimowanaRamka
                     break;
             }
 
+            this.Font = new Font(BtnFont, 12, FontStyle.Regular);
+
             borderBrush = new SolidBrush(ColorTranslator.FromHtml("#ff0000"));
 
             this.Paint += ButtonShape_Paint;
@@ -103,6 +119,7 @@ namespace AnimowanaRamka
                     break;
             }
         }
+
 
 
     }

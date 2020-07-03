@@ -35,6 +35,11 @@
             this.comboColor = new System.Windows.Forms.ComboBox();
             this.btnMain = new AnimowanaRamka.ButtonShape();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBtn = new System.Windows.Forms.TextBox();
+            this.btnChgText = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboFont = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,10 +82,13 @@
             // 
             // btnMain
             // 
-            resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.BackColor = System.Drawing.Color.White;
+            this.btnMain.BorderThickness = 5F;
             this.btnMain.BtnColor = null;
+            this.btnMain.BtnFont = null;
             this.btnMain.BtnShape = null;
+            this.btnMain.BtnText = null;
+            resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.Name = "btnMain";
             this.btnMain.UseVisualStyleBackColor = false;
             // 
@@ -90,11 +98,53 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Name = "label3";
             // 
+            // textBtn
+            // 
+            resources.ApplyResources(this.textBtn, "textBtn");
+            this.textBtn.Name = "textBtn";
+            // 
+            // btnChgText
+            // 
+            resources.ApplyResources(this.btnChgText, "btnChgText");
+            this.btnChgText.Name = "btnChgText";
+            this.btnChgText.UseVisualStyleBackColor = true;
+            this.btnChgText.Click += new System.EventHandler(this.btnChgText_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Name = "label5";
+            // 
+            // comboFont
+            // 
+            this.comboFont.FormattingEnabled = true;
+            this.comboFont.Items.AddRange(new object[] {
+            resources.GetString("comboFont.Items"),
+            resources.GetString("comboFont.Items1"),
+            resources.GetString("comboFont.Items2"),
+            resources.GetString("comboFont.Items3"),
+            resources.GetString("comboFont.Items4")});
+            resources.ApplyResources(this.comboFont, "comboFont");
+            this.comboFont.Name = "comboFont";
+            this.comboFont.SelectedIndexChanged += new System.EventHandler(this.comboFont_SelectedIndexChanged);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.Controls.Add(this.comboFont);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnChgText);
+            this.Controls.Add(this.textBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMain);
             this.Controls.Add(this.comboColor);
@@ -116,6 +166,11 @@
         private System.Windows.Forms.ComboBox comboColor;
         private ButtonShape btnMain;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBtn;
+        private System.Windows.Forms.Button btnChgText;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboFont;
     }
 }
 

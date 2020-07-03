@@ -43,7 +43,8 @@ namespace AnimowanaRamka
         {
             comboBox1.SelectedIndex = 0;
             comboColor.SelectedIndex = 0;
-
+            comboFont.SelectedIndex = 0;
+                
         }
 
         private void comboColor_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,5 +75,33 @@ namespace AnimowanaRamka
 
         }
 
+        private void btnChgText_Click(object sender, EventArgs e)
+        {
+            btnMain.BtnText = textBtn.Text;
+        }
+
+        private void comboFont_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedFont = comboFont.SelectedItem.ToString();
+
+            switch (selectedFont)
+            {
+                case "Arial":
+                    btnMain.BtnFont = "Arial";
+                    break;
+                case "Calibri":
+                    btnMain.BtnFont = "Calibri";
+                    break;
+                case "Times New Roman":
+                    btnMain.BtnFont = "Times New Roman";
+                    break;
+                case "Roboto":
+                    btnMain.BtnFont = "Roboto";
+                    break;
+                case "Comic Sans":
+                    btnMain.BtnFont = "Comic Sans MS";
+                    break;
+            }
+        }
     }
 }
