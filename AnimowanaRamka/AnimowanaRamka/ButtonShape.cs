@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Text;
 using System.Windows.Forms;
 
 namespace AnimowanaRamka
@@ -28,8 +25,6 @@ namespace AnimowanaRamka
 
         public override Cursor Cursor { get; set; } = Cursors.Hand;
         public float BorderThickness { get; set; } = 5;
-
-        private StringFormat stringFormat = new StringFormat();
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
@@ -81,10 +76,7 @@ namespace AnimowanaRamka
 
             borderBrush = new SolidBrush(ColorTranslator.FromHtml("#ff0000"));
 
-
             this.Paint += ButtonShape_Paint;
-
-
             base.OnPaint(e);
         }
 
