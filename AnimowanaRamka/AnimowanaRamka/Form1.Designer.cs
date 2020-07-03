@@ -77,6 +77,7 @@
             // 
             // btnMain
             // 
+            this.btnMain.AutoEllipsis = true;
             this.btnMain.BackColor = System.Drawing.Color.White;
             this.btnMain.BtnColor = null;
             this.btnMain.BtnShape = null;

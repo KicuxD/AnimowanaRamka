@@ -257,7 +257,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>568, 450</value>
+    <value>572, 450</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Przycisk z animowaną ramką</value>
