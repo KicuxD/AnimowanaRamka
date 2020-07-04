@@ -2,6 +2,10 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Media.Animation;
+using System.Windows.Media;
 
 namespace AnimowanaRamka
 {
