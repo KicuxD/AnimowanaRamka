@@ -13,3 +13,17 @@ C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.pdb
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.genruntimeconfig.cache
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csprojAssemblyReference.cache
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.exe
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.deps.json
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.runtimeconfig.json
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.runtimeconfig.dev.json
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.dll
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\bin\Debug\netcoreapp3.1\AnimowanaRamka.pdb
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csprojAssemblyReference.cache
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.Form1.resources
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csproj.GenerateResource.cache
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.AssemblyInfoInputs.cache
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.AssemblyInfo.cs
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.dll
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.pdb
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.genruntimeconfig.cache
