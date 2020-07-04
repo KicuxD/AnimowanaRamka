@@ -111,7 +111,8 @@ namespace AnimowanaRamka
                     e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
                 case "Circle":
-                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
                 case "Square":
                     borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
