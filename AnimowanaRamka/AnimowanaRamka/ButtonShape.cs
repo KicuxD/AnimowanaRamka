@@ -2,6 +2,10 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Media.Animation;
+using System.Windows.Media;
 
 namespace AnimowanaRamka
 {
@@ -36,6 +40,8 @@ namespace AnimowanaRamka
         }
 
         public float BorderThickness { get; set; } = 5;
+        public object KeyTime { get; private set; }
+        public object RepeatBehavior { get; private set; }
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
@@ -90,7 +96,67 @@ namespace AnimowanaRamka
 
             this.Font = new Font(BtnFont, 12, FontStyle.Regular);
 
-            borderBrush = new SolidBrush(ColorTranslator.FromHtml("#ff0000"));
+            //borderBrush = new SolidBrush(ColorTranslator.FromHtml("#ff0000"));
+
+        //public ColorAnimationUsingKeyFramesExample()
+            //{
+                // Create the Border that is the target of the animation.
+                SolidBrush borderBrush = new SolidBrush(Color);
+                borderBrush.Color = Color.FromArgb(255, 0, 255, 0);
+
+                // Set the initial color of the border to green.
+                borderRectangle.BorderBrush = borderBrush;
+                borderRectangle.BorderThickness = new Thickness(28);
+                borderRectangle.Padding = new Thickness(20);
+                myStackPanel.Children.Add(myBorder);
+
+                // Assign the Brush a name so that
+                // it can be targeted by a Storyboard.
+                this.RegisterName("borderBrush", borderBrush);
+
+                // Create a ColorAnimationUsingKeyFrames to
+                // animate the BorderBrush property of the Button.
+                ColorAnimationUsingKeyFrames colorAnimation = new ColorAnimationUsingKeyFrames();
+                colorAnimation.Duration = TimeSpan.FromSeconds(6);
+
+                // Create brushes to use as animation values.
+                Color redColor = new Color();
+                redColor = Color.FromArgb(255, 255, 0, 0);
+                Color yellowColor = new Color();
+                yellowColor = Color.FromArgb(255, 255, 255, 0);
+                Color greenColor = new Color();
+                greenColor = Color.FromArgb(255, 0, 255, 0);
+
+                // Go from green to red in the first 2 seconds. LinearColorKeyFrame creates
+                // a smooth, linear animation between values.
+                colorAnimation.KeyFrames.Add(
+                    new LinearColorKeyFrame(
+                        redColor, // Target value (KeyValue)
+                        KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2.0))) // KeyTime
+                    );
+
+                // In the next half second, go to yellow. DiscreteColorKeyFrame creates a
+                // sudden jump between values.
+                colorAnimation.KeyFrames.Add(
+                    new DiscreteColorKeyFrame(
+                        yellowColor, // Target value (KeyValue)
+                        KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2.5))) // KeyTime
+                    );
+
+                // In the final 2 seconds of the animation, go from yellow back to green. SplineColorKeyFrame
+                // creates a variable transition between values depending on the KeySpline property. In this example,
+                // the animation starts off slow but toward the end of the time segment, it speeds up exponentially.
+                colorAnimation.KeyFrames.Add(
+                    new SplineColorKeyFrame(
+                        greenColor, // Target value (KeyValue)
+                        KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4.5)), // KeyTime
+                        new KeySpline(0.6, 0.0, 0.9, 0.0) // KeySpline
+                        )
+                    );
+
+                // Set the animation to repeat forever.
+                colorAnimation.RepeatBehavior = RepeatBehavior.Forever;
+            //}
 
             this.Paint += ButtonShape_Paint;
             base.OnPaint(e);
@@ -111,6 +177,7 @@ namespace AnimowanaRamka
                     e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
                 case "Circle":
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     break;
                 case "Square":
