@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboColor = new System.Windows.Forms.ComboBox();
             this.btnMain = new AnimowanaRamka.ButtonShape();
             this.label3 = new System.Windows.Forms.Label();
             this.textBtn = new System.Windows.Forms.TextBox();
@@ -41,7 +39,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboFont = new System.Windows.Forms.ComboBox();
             this.comboGradColor1 = new System.Windows.Forms.ComboBox();
-            this.class11 = new AnimowanaRamka.Class1();
+            this.comboGradColor2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboAnimDirection = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -49,12 +51,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Name = "label2";
             // 
             // comboBox1
             // 
@@ -68,23 +64,10 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboColor
-            // 
-            resources.ApplyResources(this.comboColor, "comboColor");
-            this.comboColor.FormattingEnabled = true;
-            this.comboColor.Items.AddRange(new object[] {
-            resources.GetString("comboColor.Items"),
-            resources.GetString("comboColor.Items1"),
-            resources.GetString("comboColor.Items2"),
-            resources.GetString("comboColor.Items3"),
-            resources.GetString("comboColor.Items4"),
-            resources.GetString("comboColor.Items5")});
-            this.comboColor.Name = "comboColor";
-            this.comboColor.SelectedIndexChanged += new System.EventHandler(this.comboColor_SelectedIndexChanged);
-            // 
             // btnMain
             // 
-            this.btnMain.Angle = 251F;
+            this.btnMain.Angle = -126F;
+            this.btnMain.AnimDirection = 0;
             this.btnMain.BackColor = System.Drawing.Color.White;
             this.btnMain.BorderThickness = 5F;
             this.btnMain.BtnColor = null;
@@ -148,26 +131,72 @@
             resources.GetString("comboGradColor1.Items1"),
             resources.GetString("comboGradColor1.Items2"),
             resources.GetString("comboGradColor1.Items3"),
-            resources.GetString("comboGradColor1.Items4")});
+            resources.GetString("comboGradColor1.Items4"),
+            resources.GetString("comboGradColor1.Items5"),
+            resources.GetString("comboGradColor1.Items6"),
+            resources.GetString("comboGradColor1.Items7"),
+            resources.GetString("comboGradColor1.Items8")});
             resources.ApplyResources(this.comboGradColor1, "comboGradColor1");
             this.comboGradColor1.Name = "comboGradColor1";
             this.comboGradColor1.SelectedIndexChanged += new System.EventHandler(this.comboGradColor1_SelectedIndexChanged);
             // 
-            // class11
+            // comboGradColor2
             // 
-            this.class11.Angle = 282F;
-            resources.ApplyResources(this.class11, "class11");
-            this.class11.Name = "class11";
+            this.comboGradColor2.FormattingEnabled = true;
+            this.comboGradColor2.Items.AddRange(new object[] {
+            resources.GetString("comboGradColor2.Items"),
+            resources.GetString("comboGradColor2.Items1"),
+            resources.GetString("comboGradColor2.Items2"),
+            resources.GetString("comboGradColor2.Items3"),
+            resources.GetString("comboGradColor2.Items4"),
+            resources.GetString("comboGradColor2.Items5"),
+            resources.GetString("comboGradColor2.Items6"),
+            resources.GetString("comboGradColor2.Items7"),
+            resources.GetString("comboGradColor2.Items8")});
+            resources.ApplyResources(this.comboGradColor2, "comboGradColor2");
+            this.comboGradColor2.Name = "comboGradColor2";
+            this.comboGradColor2.SelectedIndexChanged += new System.EventHandler(this.comboGradColor2_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Name = "label2";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Name = "label6";
+            // 
+            // comboAnimDirection
+            // 
+            this.comboAnimDirection.FormattingEnabled = true;
+            this.comboAnimDirection.Items.AddRange(new object[] {
+            resources.GetString("comboAnimDirection.Items"),
+            resources.GetString("comboAnimDirection.Items1")});
+            resources.ApplyResources(this.comboAnimDirection, "comboAnimDirection");
+            this.comboAnimDirection.Name = "comboAnimDirection";
+            this.comboAnimDirection.SelectedIndexChanged += new System.EventHandler(this.comboAnimDirection_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Name = "label7";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.Controls.Add(this.class11);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboAnimDirection);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboGradColor2);
             this.Controls.Add(this.comboGradColor1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboFont);
             this.Controls.Add(this.label5);
@@ -176,7 +205,6 @@
             this.Controls.Add(this.textBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnMain);
-            this.Controls.Add(this.comboColor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -187,9 +215,7 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboColor;
         private ButtonShape btnMain;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBtn;
@@ -198,7 +224,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboFont;
         private System.Windows.Forms.ComboBox comboGradColor1;
-        private Class1 class11;
+        private System.Windows.Forms.ComboBox comboGradColor2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboAnimDirection;
+        private System.Windows.Forms.Label label7;
     }
 }
 

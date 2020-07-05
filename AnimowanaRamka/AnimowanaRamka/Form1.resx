@@ -63,7 +63,7 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>162, 234</value>
+    <value>293, 235</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>52, 15</value>
@@ -84,34 +84,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>296, 234</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>44, 15</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>KOLOR</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -130,10 +103,10 @@
     <value>Prostokąt</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>162, 252</value>
+    <value>293, 253</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>93, 23</value>
+    <value>95, 23</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
@@ -148,49 +121,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboColor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="comboColor.Items" xml:space="preserve">
-    <value>Biały</value>
-  </data>
-  <data name="comboColor.Items1" xml:space="preserve">
-    <value>Czarny</value>
-  </data>
-  <data name="comboColor.Items2" xml:space="preserve">
-    <value>Czerwony</value>
-  </data>
-  <data name="comboColor.Items3" xml:space="preserve">
-    <value>Niebieski</value>
-  </data>
-  <data name="comboColor.Items4" xml:space="preserve">
-    <value>Zielony</value>
-  </data>
-  <data name="comboColor.Items5" xml:space="preserve">
-    <value>Żółty</value>
-  </data>
-  <data name="comboColor.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>296, 252</value>
-  </data>
-  <data name="comboColor.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>93, 23</value>
-  </data>
-  <data name="comboColor.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboColor.Name" xml:space="preserve">
-    <value>comboColor</value>
-  </data>
-  <data name="&gt;&gt;comboColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboColor.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboColor.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>6</value>
   </data>
   <data name="btnMain.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -203,7 +134,7 @@
     <value>139, 85</value>
   </data>
   <data name="btnMain.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>267, 79</value>
+    <value>283, 79</value>
   </data>
   <data name="btnMain.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -218,7 +149,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnMain.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -245,7 +176,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="textBtn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>162, 199</value>
@@ -266,7 +197,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBtn.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="btnChgText.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>336, 198</value>
@@ -290,7 +221,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnChgText.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -317,13 +248,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>162, 284</value>
+    <value>162, 235</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>37, 15</value>
@@ -344,7 +275,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="comboFont.Items" xml:space="preserve">
     <value>Arial</value>
@@ -362,10 +293,10 @@
     <value>Times New Roman</value>
   </data>
   <data name="comboFont.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>162, 303</value>
+    <value>162, 253</value>
   </data>
   <data name="comboFont.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>227, 23</value>
+    <value>95, 23</value>
   </data>
   <data name="comboFont.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
@@ -380,28 +311,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboFont.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="comboGradColor1.Items" xml:space="preserve">
-    <value>Red</value>
+    <value>beżowy</value>
   </data>
   <data name="comboGradColor1.Items1" xml:space="preserve">
-    <value>Black</value>
+    <value>biały</value>
   </data>
   <data name="comboGradColor1.Items2" xml:space="preserve">
-    <value>Yellow</value>
+    <value>czarny</value>
   </data>
   <data name="comboGradColor1.Items3" xml:space="preserve">
-    <value>Green</value>
+    <value>czerwony</value>
   </data>
   <data name="comboGradColor1.Items4" xml:space="preserve">
-    <value>Blue</value>
+    <value>niebieski</value>
+  </data>
+  <data name="comboGradColor1.Items5" xml:space="preserve">
+    <value>pomarańczowy</value>
+  </data>
+  <data name="comboGradColor1.Items6" xml:space="preserve">
+    <value>różowy</value>
+  </data>
+  <data name="comboGradColor1.Items7" xml:space="preserve">
+    <value>zielony</value>
+  </data>
+  <data name="comboGradColor1.Items8" xml:space="preserve">
+    <value>żółty</value>
   </data>
   <data name="comboGradColor1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>162, 367</value>
+    <value>162, 310</value>
   </data>
   <data name="comboGradColor1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>121, 23</value>
+    <value>95, 23</value>
   </data>
   <data name="comboGradColor1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -416,27 +359,162 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboGradColor1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
-  <data name="class11.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>430, 85</value>
+  <data name="comboGradColor2.Items" xml:space="preserve">
+    <value>beżowy</value>
   </data>
-  <data name="class11.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>121, 83</value>
+  <data name="comboGradColor2.Items1" xml:space="preserve">
+    <value>biały</value>
   </data>
-  <data name="class11.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="comboGradColor2.Items2" xml:space="preserve">
+    <value>czarny</value>
+  </data>
+  <data name="comboGradColor2.Items3" xml:space="preserve">
+    <value>czerwony</value>
+  </data>
+  <data name="comboGradColor2.Items4" xml:space="preserve">
+    <value>niebieski</value>
+  </data>
+  <data name="comboGradColor2.Items5" xml:space="preserve">
+    <value>pomarańczowy</value>
+  </data>
+  <data name="comboGradColor2.Items6" xml:space="preserve">
+    <value>różowy</value>
+  </data>
+  <data name="comboGradColor2.Items7" xml:space="preserve">
+    <value>zielony</value>
+  </data>
+  <data name="comboGradColor2.Items8" xml:space="preserve">
+    <value>żółty</value>
+  </data>
+  <data name="comboGradColor2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>293, 310</value>
+  </data>
+  <data name="comboGradColor2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>95, 23</value>
+  </data>
+  <data name="comboGradColor2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;class11.Name" xml:space="preserve">
-    <value>class11</value>
+  <data name="&gt;&gt;comboGradColor2.Name" xml:space="preserve">
+    <value>comboGradColor2</value>
   </data>
-  <data name="&gt;&gt;class11.Type" xml:space="preserve">
-    <value>AnimowanaRamka.Class1, AnimowanaRamka, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;comboGradColor2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;class11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;comboGradColor2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;class11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboGradColor2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>162, 292</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>107, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>RAMKA: KOLOR #1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>293, 292</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>107, 15</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>RAMKA: KOLOR #2</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboAnimDirection.Items" xml:space="preserve">
+    <value>Prawo</value>
+  </data>
+  <data name="comboAnimDirection.Items1" xml:space="preserve">
+    <value>Lewo</value>
+  </data>
+  <data name="comboAnimDirection.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>162, 367</value>
+  </data>
+  <data name="comboAnimDirection.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>95, 23</value>
+  </data>
+  <data name="comboAnimDirection.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboAnimDirection.Name" xml:space="preserve">
+    <value>comboAnimDirection</value>
+  </data>
+  <data name="&gt;&gt;comboAnimDirection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboAnimDirection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboAnimDirection.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>162, 349</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>117, 15</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>KIERUNEK ANIMACJI</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">

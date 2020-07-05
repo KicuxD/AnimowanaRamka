@@ -12,13 +12,20 @@ namespace AnimowanaRamka
         private string btnShape, btnColor, btnText, btnFont;
         private LinearGradientBrush borderBrush;
         private Rectangle borderRectangle;
-        private Color cl0 = Color.Yellow, cl1 = Color.Blue;
-        private float ang = 45;
+        private Color cl0 = Color.White, cl1 = Color.White;
+        private float ang = 0;
+        private int animDirection;
         Timer t = new Timer();
 
     public ButtonShape()
         {
             DoubleBuffered = true;
+
+            t.Interval = 60;
+            t.Enabled = true;
+
+            t.Tick += (s, e) => { Angle = Angle % 360 + animDirection; };
+
         }
 
         public float Angle
@@ -51,6 +58,12 @@ namespace AnimowanaRamka
             set { btnFont = value; Invalidate(); }
         }
 
+        public int AnimDirection
+        {
+            get { return animDirection; }
+            set { animDirection = value; Invalidate(); }
+        }
+
         public Color CL0
         {
             get { return cl0; }
@@ -67,11 +80,6 @@ namespace AnimowanaRamka
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
-
-            t.Interval = 60;
-            t.Enabled = true;
-            t.Tick += (s, e) => { Angle = Angle % 360 + 1; };
-            
             this.Text = BtnText;
 
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
@@ -89,35 +97,13 @@ namespace AnimowanaRamka
                     this.Region = new System.Drawing.Region(grPath);
                     break;
                 case "Circle":
-                    grPath.AddEllipse(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    grPath.AddEllipse(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
                     this.Region = new System.Drawing.Region(grPath);
                     break;
                 case "Square":
-                    Rectangle pathSquare = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    Rectangle pathSquare = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
                     grPath.AddRectangle(pathSquare);
                     this.Region = new System.Drawing.Region(grPath);
-                    break;
-            }
-
-            switch (btnColor)
-            {
-                case "Black":
-                    this.BackColor = Color.Black;
-                    break;
-                case "Red":
-                    this.BackColor = Color.Red;
-                    break;
-                case "Yellow":
-                    this.BackColor = Color.Yellow;
-                    break;
-                case "Green":
-                    this.BackColor = Color.Green;
-                    break;
-                case "White":
-                    this.BackColor = Color.White;
-                    break;
-                case "Blue":
-                    this.BackColor = Color.Blue;
                     break;
             }
 
@@ -142,25 +128,16 @@ namespace AnimowanaRamka
                     borderRectangle = new Rectangle(0, 0, Width, Height);
                     borderBrush = new LinearGradientBrush(borderRectangle, cl0, cl1, ang);
                     e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
-                    e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
                     break;
                 case "Circle":
-                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
                     borderBrush = new LinearGradientBrush(borderRectangle, cl0, cl1, ang);
-                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
-                    e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
                     break;
                 case "Square":
-                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
-                    borderBrush = new LinearGradientBrush(ClientRectangle, cl0, cl1, ang);
-                    GraphicsPath grBorder = new GraphicsPath();
-                    grBorder.AddArc(new Rectangle(0, 0, 20, 20), 180, 90);
-                    grBorder.AddArc(new Rectangle(Width - 20, 0, 20, 20), -90, 90);
-                    grBorder.AddArc(new Rectangle(Width - 20, Height - 20, 20, 20), 0, 90);
-                    grBorder.AddArc(new Rectangle(0, Height - 20, 20, 20), 90, 90);
-
-                    //e.Graphics.DrawRectangle(new Pen(borderBrush, BorderThickness), ClientRectangle);
-                    e.Graphics.FillPath(new LinearGradientBrush(borderRectangle, cl0, cl1, ang), grBorder);
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    borderBrush = new LinearGradientBrush(borderRectangle, cl0, cl1, ang);
+                    e.Graphics.DrawRectangle(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
             }
 

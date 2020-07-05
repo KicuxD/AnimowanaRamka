@@ -42,38 +42,10 @@ namespace AnimowanaRamka
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 0;
-            comboColor.SelectedIndex = 0;
             comboFont.SelectedIndex = 0;
             comboGradColor1.SelectedIndex = 0;
-
-
-        }
-
-        private void comboColor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedColor = comboColor.SelectedItem.ToString();
-
-            switch (selectedColor)
-            {
-                case "Czarny":
-                    btnMain.BtnColor = "Black";
-                    break;
-                case "Czerwony":
-                    btnMain.BtnColor = "Red";
-                    break;
-                case "Biały":
-                    btnMain.BtnColor = "White";
-                    break;
-                case "Żółty":
-                    btnMain.BtnColor = "Yellow";
-                    break;
-                case "Zielony":
-                    btnMain.BtnColor = "Green";
-                    break;
-                case "Niebieski":
-                    btnMain.BtnColor = "Blue";
-                    break;
-            }
+            comboGradColor2.SelectedIndex = 2;
+            comboAnimDirection.SelectedIndex = 0;
 
         }
 
@@ -110,24 +82,112 @@ namespace AnimowanaRamka
         {
             string selectedColor = comboGradColor1.SelectedItem.ToString();
 
+            /*
+             *  beżowy
+                biały
+                czarny
+                czerwony
+                niebieski
+                pomarańczowy
+                różowy
+                zielony
+                żółty
+             */
+
             switch (selectedColor)
             {
-                case "Red":
-                    btnMain.CL0 = Color.Red;
+                case "beżowy":
+                    btnMain.CL0 = Color.Beige;
                     break;
-                case "Black":
+                case "biały":
+                    btnMain.CL0 = Color.AntiqueWhite;
+                    break;
+                case "czarny":
                     btnMain.CL0 = Color.Black;
                     break;
-                case "Yellow":
-                    btnMain.CL0 = Color.Yellow;
+                case "czerwony":
+                    btnMain.CL0 = Color.IndianRed;
                     break;
-                case "Green":
-                    btnMain.CL0 = Color.Green;
+                case "niebieski":
+                    btnMain.CL0 = Color.CadetBlue;
                     break;
-                case "Blue":
-                    btnMain.CL0 = Color.Blue;
+                case "pomarańczowy":
+                    btnMain.CL0 = Color.Orange;
+                    break;
+                case "różowy":
+                    btnMain.CL0 = Color.DeepPink;
+                    break;
+                case "zielony":
+                    btnMain.CL0 = Color.LawnGreen;
+                    break;
+                case "żółty":
+                    btnMain.CL0 = Color.Gold;
                     break;
             }
+        }
+
+        private void comboGradColor2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedColor2 = comboGradColor2.SelectedItem.ToString();
+
+            /*
+             *  beżowy
+                biały
+                czarny
+                czerwony
+                niebieski
+                pomarańczowy
+                różowy
+                zielony
+                żółty
+             */
+
+            switch (selectedColor2)
+            {
+                case "beżowy":
+                    btnMain.CL1 = Color.Beige;
+                    break;
+                case "biały":
+                    btnMain.CL1 = Color.AntiqueWhite;
+                    break;
+                case "czarny":
+                    btnMain.CL1 = Color.Black;
+                    break;
+                case "czerwony":
+                    btnMain.CL1 = Color.IndianRed;
+                    break;
+                case "niebieski":
+                    btnMain.CL1 = Color.CadetBlue;
+                    break;
+                case "pomarańczowy":
+                    btnMain.CL1 = Color.Orange;
+                    break;
+                case "różowy":
+                    btnMain.CL1 = Color.DeepPink;
+                    break;
+                case "zielony":
+                    btnMain.CL1 = Color.LawnGreen;
+                    break;
+                case "żółty":
+                    btnMain.CL1 = Color.Gold;
+                    break;
+            }
+        }
+
+        private void comboAnimDirection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedDir = comboAnimDirection.SelectedItem.ToString();
+
+            switch (selectedDir)
+            {
+                case "Prawo":
+                    btnMain.AnimDirection = 1;
+                    break;
+                case "Lewo":
+                    btnMain.AnimDirection = -1;
+                    break;
+            }
+
         }
     }
 }
