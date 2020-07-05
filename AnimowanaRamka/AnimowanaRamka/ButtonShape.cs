@@ -80,6 +80,7 @@ namespace AnimowanaRamka
 
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
+
             this.Text = BtnText;
 
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
@@ -97,11 +98,11 @@ namespace AnimowanaRamka
                     this.Region = new System.Drawing.Region(grPath);
                     break;
                 case "Circle":
-                    grPath.AddEllipse(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    grPath.AddEllipse(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     this.Region = new System.Drawing.Region(grPath);
                     break;
                 case "Square":
-                    Rectangle pathSquare = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    Rectangle pathSquare = new Rectangle(ClientSize.Width/3, 0, ClientSize.Width / 3, ClientSize.Height);
                     grPath.AddRectangle(pathSquare);
                     this.Region = new System.Drawing.Region(grPath);
                     break;
@@ -130,12 +131,12 @@ namespace AnimowanaRamka
                     e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
                 case "Circle":
-                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     borderBrush = new LinearGradientBrush(borderRectangle, cl0, cl1, ang);
-                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    e.Graphics.DrawEllipse(new Pen(borderBrush, BorderThickness), ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     break;
                 case "Square":
-                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Height, ClientSize.Height);
+                    borderRectangle = new Rectangle(ClientSize.Width / 3, 0, ClientSize.Width / 3, ClientSize.Height);
                     borderBrush = new LinearGradientBrush(borderRectangle, cl0, cl1, ang);
                     e.Graphics.DrawRectangle(new Pen(borderBrush, BorderThickness), borderRectangle);
                     break;
