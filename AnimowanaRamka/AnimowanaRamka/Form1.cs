@@ -44,7 +44,9 @@ namespace AnimowanaRamka
             comboBox1.SelectedIndex = 0;
             comboColor.SelectedIndex = 0;
             comboFont.SelectedIndex = 0;
-                
+            comboGradColor1.SelectedIndex = 0;
+
+
         }
 
         private void comboColor_SelectedIndexChanged(object sender, EventArgs e)
@@ -100,6 +102,30 @@ namespace AnimowanaRamka
                     break;
                 case "Comic Sans":
                     btnMain.BtnFont = "Comic Sans MS";
+                    break;
+            }
+        }
+
+        private void comboGradColor1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedColor = comboGradColor1.SelectedItem.ToString();
+
+            switch (selectedColor)
+            {
+                case "Red":
+                    btnMain.CL0 = Color.Red;
+                    break;
+                case "Black":
+                    btnMain.CL0 = Color.Black;
+                    break;
+                case "Yellow":
+                    btnMain.CL0 = Color.Yellow;
+                    break;
+                case "Green":
+                    btnMain.CL0 = Color.Green;
+                    break;
+                case "Blue":
+                    btnMain.CL0 = Color.Blue;
                     break;
             }
         }

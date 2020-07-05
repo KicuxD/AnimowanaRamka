@@ -40,6 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboFont = new System.Windows.Forms.ComboBox();
+            this.comboGradColor1 = new System.Windows.Forms.ComboBox();
+            this.class11 = new AnimowanaRamka.Class1();
             this.SuspendLayout();
             // 
             // label1
@@ -82,12 +84,15 @@
             // 
             // btnMain
             // 
+            this.btnMain.Angle = 251F;
             this.btnMain.BackColor = System.Drawing.Color.White;
             this.btnMain.BorderThickness = 5F;
             this.btnMain.BtnColor = null;
             this.btnMain.BtnFont = null;
             this.btnMain.BtnShape = null;
             this.btnMain.BtnText = null;
+            this.btnMain.CL0 = System.Drawing.Color.Yellow;
+            this.btnMain.CL1 = System.Drawing.Color.Blue;
             resources.ApplyResources(this.btnMain, "btnMain");
             this.btnMain.Name = "btnMain";
             this.btnMain.UseVisualStyleBackColor = false;
@@ -135,11 +140,32 @@
             this.comboFont.Name = "comboFont";
             this.comboFont.SelectedIndexChanged += new System.EventHandler(this.comboFont_SelectedIndexChanged);
             // 
+            // comboGradColor1
+            // 
+            this.comboGradColor1.FormattingEnabled = true;
+            this.comboGradColor1.Items.AddRange(new object[] {
+            resources.GetString("comboGradColor1.Items"),
+            resources.GetString("comboGradColor1.Items1"),
+            resources.GetString("comboGradColor1.Items2"),
+            resources.GetString("comboGradColor1.Items3"),
+            resources.GetString("comboGradColor1.Items4")});
+            resources.ApplyResources(this.comboGradColor1, "comboGradColor1");
+            this.comboGradColor1.Name = "comboGradColor1";
+            this.comboGradColor1.SelectedIndexChanged += new System.EventHandler(this.comboGradColor1_SelectedIndexChanged);
+            // 
+            // class11
+            // 
+            this.class11.Angle = 282F;
+            resources.ApplyResources(this.class11, "class11");
+            this.class11.Name = "class11";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.Controls.Add(this.class11);
+            this.Controls.Add(this.comboGradColor1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -171,6 +197,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboFont;
+        private System.Windows.Forms.ComboBox comboGradColor1;
+        private Class1 class11;
     }
 }
 
