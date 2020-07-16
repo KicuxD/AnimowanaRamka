@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnMain = new AnimowanaRamka.ButtonShape();
             this.label3 = new System.Windows.Forms.Label();
             this.textBtn = new System.Windows.Forms.TextBox();
             this.btnChgText = new System.Windows.Forms.Button();
@@ -63,22 +62,6 @@
             resources.GetString("comboBox1.Items3")});
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // btnMain
-            // 
-            this.btnMain.Angle = -126F;
-            this.btnMain.AnimDirection = 0;
-            this.btnMain.BackColor = System.Drawing.Color.White;
-            this.btnMain.BorderThickness = 5F;
-            this.btnMain.BtnColor = null;
-            this.btnMain.BtnFont = null;
-            this.btnMain.BtnShape = null;
-            this.btnMain.BtnText = null;
-            this.btnMain.CL0 = System.Drawing.Color.Yellow;
-            this.btnMain.CL1 = System.Drawing.Color.Blue;
-            resources.ApplyResources(this.btnMain, "btnMain");
-            this.btnMain.Name = "btnMain";
-            this.btnMain.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -204,7 +187,6 @@
             this.Controls.Add(this.btnChgText);
             this.Controls.Add(this.textBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

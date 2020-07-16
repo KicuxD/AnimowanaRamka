@@ -27,3 +27,4 @@ C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.pdb
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.genruntimeconfig.cache
 C:\Users\mfano\Documents\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csprojAssemblyReference.cache
+C:\Users\kicus\Source\Repos\AnimowanaRamka\AnimowanaRamka\AnimowanaRamka\obj\Debug\netcoreapp3.1\AnimowanaRamka.csproj.CoreCompileInputs.cache
